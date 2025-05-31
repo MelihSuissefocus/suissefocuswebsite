@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CaseStudy from '../../components/CaseStudy.astro';
+
+const caseStudyData = {
+  title: "KI-gestützte Prozessautomatisierung im Private Banking",
+  client: "Schweizer Privatbank",
+  industry: "Banking & Finance",
+  challenge: `Eine führende Schweizer Privatbank suchte nach Möglichkeiten, ihre Kundenberatung und Compliance-Prozesse zu optimieren. Die manuelle Dokumentenprüfung und Kundenkommunikation war zeitaufwendig und fehleranfällig. Gleichzeitig mussten höchste Sicherheits- und Compliance-Anforderungen erfüllt werden.`,
+  solution: `Mit der Coremlis Platform und SwiftSuite implementierten wir eine massgeschneiderte KI-Lösung:
+
+  1. Automatisierte Dokumentenanalyse mit SwiftVision für KYC/Onboarding
+  2. Intelligenter Chatbot für 24/7 Kundenanfragen
+  3. Anomalie-Erkennung im Zahlungsverkehr mit SwiftGuard
+  4. MLOps-Setup mit vollständiger Audit-Trail und FINMA-Compliance`,
+  results: [
+    {
+      label: "Zeitersparnis im Onboarding",
+      value: "65%"
+    },
+    {
+      label: "Reduktion manueller Compliance-Checks",
+      value: "80%"
+    },
+    {
+      label: "Kundenanfragen automatisch beantwortet",
+      value: "40%"
+    },
+    {
+      label: "ROI nach 12 Monaten",
+      value: "280%"
+    }
+  ],
+  quote: {
+    text: "Die KI-Lösungen von suissefocus haben unsere Effizienz drastisch gesteigert, ohne Kompromisse bei Sicherheit oder Compliance einzugehen. Die Schweizer Hosting-Option war für uns ein entscheidender Faktor.",
+    author: "Dr. Thomas Meier",
+    role: "Chief Digital Officer"
+  },
+  image: "/images/banking-case-study.jpg"
+};
+---
+
+<Layout 
+  title={caseStudyData.title}
+  description="Erfahren Sie, wie eine Schweizer Privatbank mit KI-Lösungen von suissefocus ihre Prozesse optimiert und die Kundenberatung revolutioniert hat."
+>
+  <CaseStudy {...caseStudyData} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-900">
+        Interessiert an ähnlichen Lösungen?
+      </h2>
+      <p class="mt-4 text-lg text-gray-600">
+        Lassen Sie uns gemeinsam besprechen, wie wir auch Ihr Unternehmen mit KI optimieren können.
+      </p>
+      <div class="mt-8">
+        <a
+          href="/contact"
+          class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-accent hover:bg-accent/90"
+        >
+          Beratungsgespräch vereinbaren
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout> 

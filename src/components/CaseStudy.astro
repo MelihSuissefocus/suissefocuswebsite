@@ -1,0 +1,86 @@
+---
+interface Props {
+  title: string;
+  client: string;
+  industry: string;
+  challenge: string;
+  solution: string;
+  results: {
+    label: string;
+    value: string;
+  }[];
+  quote?: {
+    text: string;
+    author: string;
+    role: string;
+  };
+  image: string;
+}
+
+const {
+  title,
+  client,
+  industry,
+  challenge,
+  solution,
+  results,
+  quote,
+  image
+} = Astro.props;
+---
+
+<article class="bg-white">
+  <div class="relative h-96 overflow-hidden">
+    <img 
+      src={image} 
+      alt={`${client} Case Study`} 
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+      <div class="max-w-7xl mx-auto">
+        <p class="text-sm font-medium mb-2">{industry}</p>
+        <h1 class="text-3xl sm:text-4xl font-bold">{title}</h1>
+        <p class="mt-2 text-lg text-gray-200">{client}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div class="lg:col-span-2">
+        <div class="prose prose-lg">
+          <h2 class="text-2xl font-bold text-gray-900">Die Herausforderung</h2>
+          <p class="text-gray-600">{challenge}</p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mt-12">Unsere Lösung</h2>
+          <p class="text-gray-600">{solution}</p>
+        </div>
+
+        {quote && (
+          <blockquote class="mt-12 border-l-4 border-accent pl-6 py-6 bg-gray-50">
+            <p class="text-xl italic text-gray-900">{quote.text}</p>
+            <footer class="mt-4">
+              <p class="font-medium text-gray-900">{quote.author}</p>
+              <p class="text-gray-600">{quote.role}</p>
+            </footer>
+          </blockquote>
+        )}
+      </div>
+
+      <div class="lg:col-start-3">
+        <div class="bg-gray-50 rounded-xl p-8">
+          <h3 class="text-lg font-semibold text-gray-900 mb-6">Ergebnisse</h3>
+          <div class="space-y-6">
+            {results.map(result => (
+              <div>
+                <p class="text-sm text-gray-500">{result.label}</p>
+                <p class="text-2xl font-bold text-primary">{result.value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article> 

@@ -1,0 +1,69 @@
+/* Global styles */
+.bg-suissefocus-gradient {
+  background: linear-gradient(135deg, #C9FCD9 0%, #A5C9FF 100%);
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add a smooth transition to all elements */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Performance optimizations for menus */
+.group {
+  will-change: transform;
+}
+
+.group > div {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Enhanced page transitions */
+.page-transition-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Improve link and button hover states */
+a, button {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  transition-duration: 200ms;
+}
+
+/* Menu transitions */
+.menu-item {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Menu optimization */
+.group-hover\:opacity-100 {
+  will-change: opacity;
+}
+
+.group-hover\:visible {
+  will-change: visibility;
+}
+
+/* Smooth animation for content loading */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+} 

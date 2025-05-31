@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import OrgChart from '../components/about/OrgChart';
+---
+
+<Layout title="Über uns">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl font-bold text-gray-900">Über Suisse Focus</h1>
+        <div class="mt-6 text-lg text-gray-600 space-y-6">
+          <p>
+            Suisse Focus ist Ihre vertrauenswürdige Quelle für News, Analysen und praktische Informationen rund um die Schweiz.
+            Unser Team aus erfahrenen Journalisten und Experten arbeitet täglich daran, Ihnen relevante und fundierte Inhalte zu liefern.
+          </p>
+          <p>
+            Wir verstehen uns als Brückenbauer zwischen den verschiedenen Regionen und Kulturen der Schweiz
+            und bieten Ihnen einen umfassenden Blick auf die wichtigsten Entwicklungen in unserem Land.
+          </p>
+        </div>
+      </div>
+      <div class="relative h-96 bg-gray-200 rounded-lg overflow-hidden">
+        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+          <span class="text-sm">Platzhalterbild</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <OrgChart client:visible />
+</Layout> 

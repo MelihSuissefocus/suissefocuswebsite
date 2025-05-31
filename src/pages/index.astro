@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/home/HeroSection';
+import SimpleTrustLogos from '../components/home/SimpleTrustLogos';
+import ContactBanner from '../components/home/ContactBanner';
+import ProductsSection from '../components/home/ProductsSection';
+import CoreValues from '../components/home/CoreValues';
+import OfficeLocation from '../components/home/OfficeLocation';
+import Services from '../components/home/Services';
+
+const features = [
+  {
+    title: 'Coremlis Platform',
+    description: 'Self-Service-KI-Plattform zum Trainieren, Feintunen & Deployen von LLMs – On-Prem oder in der Schweizer Cloud.',
+    icon: 'M13 10V3L4 14h7v7l9-11h-7z' // Lightning bolt
+  },
+  {
+    title: 'SwiftSuite',
+    description: 'Vorgefertigte KI-Applikationen für Enterprise-Chatbots, Prognosen, Dokumentenanalyse und mehr.',
+    icon: 'M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z' // Chip
+  },
+  {
+    title: 'Advisory & InfraOps',
+    description: 'Praxisnahe IT- & Data-Beratung plus robuste Cloud- & Server-Infrastruktur aus einer Hand.',
+    icon: 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9' // Globe
+  }
+];
+
+
+---
+
+<Layout 
+  title="Schweizer KI-Lösungen & IT-Infrastruktur"
+  description="suissefocus GmbH – Ihr Schweizer Partner für Enterprise KI-Lösungen und sichere IT-Infrastruktur. Coremlis Platform, SwiftSuite und mehr."
+>
+  <HeroSection client:load />
+  <CoreValues client:load />
+  <Services client:load />
+  <ProductsSection client:load />
+  <SimpleTrustLogos client:load />
+  <OfficeLocation client:load />
+  <ContactBanner client:load />
+</Layout> 

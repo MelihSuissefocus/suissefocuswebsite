@@ -1,0 +1,19 @@
+{
+  "/_not-found": "/_not-found",
+  "/page": "/",
+  "/contact/page": "/contact",
+  "/datenschutz/page": "/datenschutz",
+  "/agb/page": "/agb",
+  "/referenzen/page": "/referenzen",
+  "/ueber-uns/page": "/ueber-uns",
+  "/wissen/page": "/wissen",
+  "/careers/page": "/careers",
+  "/impressum/page": "/impressum",
+  "/loesungen/page": "/loesungen",
+  "/loesungen/branchen/page": "/loesungen/branchen",
+  "/loesungen/coremlis/page": "/loesungen/coremlis",
+  "/loesungen/it-dienstleistungen/page": "/loesungen/it-dienstleistungen",
+  "/referenzen/[slug]/page": "/referenzen/[slug]",
+  "/ueber-uns/team/page": "/ueber-uns/team",
+  "/wissen/[slug]/page": "/wissen/[slug]"
+}
