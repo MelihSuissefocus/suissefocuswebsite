@@ -1,1 +1,0 @@
-import{j as r}from"./jsx-runtime.iaPOwJt4.js";import{r as e}from"./index.BBYsf7vu.js";import{A as n}from"./index.Vw0XyGqd.js";import"./use-presence.CRZ4TjpO.js";function p({children:i,route:t}){const[s,a]=e.useState(t);return e.useEffect(()=>{a(t)},[t]),r.jsx(n,{mode:"wait",initial:!1,children:r.jsx("div",{children:i},s)})}export{p as default};
