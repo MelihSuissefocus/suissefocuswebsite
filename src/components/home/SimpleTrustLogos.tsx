@@ -11,10 +11,10 @@ export default function SimpleTrustLogos() {
   ];
 
   return (
-    <section id="trust" className="py-24" style={{ background: 'linear-gradient(135deg, #A9B8CC 0%, #AEC2B9 100%)' }}>
+    <section id="trust" className="py-24" style={{ background: 'linear-gradient(135deg, #C9FADB 0%, #99BFFC 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <h2 className="text-center text-3xl font-semibold text-swiss-navy mb-16">
+          <h2 className="text-center text-3xl font-semibold text-text-dark mb-16">
             Vertrauen von führenden Unternehmen
           </h2>
         </ScrollReveal>

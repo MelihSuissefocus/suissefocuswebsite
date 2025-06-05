@@ -88,7 +88,7 @@ export default function ProductsSection() {
         {/* 1. Intro Section */}
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-swiss-navy mb-4">Unsere Produkte</h2>
+            <h2 className="text-4xl font-bold text-text-dark mb-4">Unsere Produkte</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Eine Plattform – und eine Suite fertiger KI-Apps, bereit für Ihr Geschäft.
             </p>
@@ -102,7 +102,7 @@ export default function ProductsSection() {
               <div className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-semibold tracking-wide uppercase mb-4 shadow-sm">
                 Plattform
               </div>
-              <h2 className="text-4xl font-bold text-swiss-navy mb-4">Coremlis Platform</h2>
+              <h2 className="text-4xl font-bold text-text-dark mb-4">Coremlis Platform</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Self-Service-KI-Plattform zum Trainieren, Feintunen & Deployen von LLMs – On-Prem oder in der Schweizer Cloud.
               </p>
@@ -120,13 +120,13 @@ export default function ProductsSection() {
                   whileTap={{ scale: 0.98 }}
                   className={`px-5 py-3 rounded-full flex items-center transition-all ${
                     activeCoremlisModule === module.id 
-                      ? 'bg-swiss-navy text-white shadow-md scale-105' 
+                      ? 'bg-brand-blue text-white shadow-md scale-105'
                       : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
                   }`}
                   aria-label={`Coremlis ${module.name} anzeigen`}
                 >
                   <span className="text-xl mr-3" aria-hidden="true">{module.emoji}</span>
-                  <span className={`font-medium ${activeCoremlisModule === module.id ? 'text-white' : 'text-swiss-navy'}`}>{module.name}</span>
+                  <span className={`font-medium ${activeCoremlisModule === module.id ? 'text-white' : 'text-text-dark'}`}>{module.name}</span>
                 </motion.button>
               ))}
             </div>
@@ -148,7 +148,7 @@ export default function ProductsSection() {
                           <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center shadow-md text-white">
                             <span className="text-2xl" aria-hidden="true">{module.emoji}</span>
                           </div>
-                          <h3 className="text-2xl font-bold text-swiss-navy ml-4">Coremlis {module.name}</h3>
+                          <h3 className="text-2xl font-bold text-text-dark ml-4">Coremlis {module.name}</h3>
                         </div>
                         <p className="text-lg text-gray-700 leading-relaxed">
                           {module.description}
@@ -194,7 +194,7 @@ export default function ProductsSection() {
                         target.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 450"><rect width="100%" height="100%" fill="%23f8fafc"/><text x="50%" y="50%" font-family="Arial" font-size="24" fill="%23475569" text-anchor="middle">Coremlis ${module?.name} ${module?.emoji}</text></svg>`;
                       }}
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-swiss-navy/90 to-swiss-navy/0 text-white p-4">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/90 to-brand-blue/0 text-white p-4">
                       <div className="text-sm font-medium">Coremlis {coremlisModules.find(m => m.id === activeCoremlisModule)?.name}</div>
                       <div className="text-xs opacity-80">Live-Demo • Klicken Sie für Details</div>
                     </div>
@@ -211,7 +211,7 @@ export default function ProductsSection() {
                 <a
                   href="/produkte#coremlis"
                   onClick={() => (window as any).plausible?.('product_click', { props: { product: 'Coremlis' } })}
-                  className="inline-flex items-center px-6 py-3 bg-swiss-red text-white rounded-lg font-medium hover:opacity-80 transition-opacity shadow-sm"
+                  className="inline-flex items-center px-6 py-3 bg-brand-blue text-white rounded-lg font-medium hover:opacity-80 transition-opacity shadow-sm"
                   aria-label="Zur Coremlis Platform navigieren"
                 >
                   <span>Zur Plattform</span>
@@ -231,7 +231,7 @@ export default function ProductsSection() {
               <div className="inline-block px-4 py-1.5 bg-secondary/10 text-secondary rounded-full text-xs font-semibold tracking-wide uppercase mb-4 shadow-sm">
                 App Suite
               </div>
-              <h2 className="text-4xl font-bold text-swiss-navy mb-4">SwiftSuite</h2>
+              <h2 className="text-4xl font-bold text-text-dark mb-4">SwiftSuite</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Vorgefertigte KI-Applikationen für Enterprise-Chatbots, Prognosen, Dokumentenanalyse und mehr.
               </p>
@@ -247,13 +247,13 @@ export default function ProductsSection() {
                   }}
                   className={`px-5 py-3 rounded-full flex items-center transition-all ${
                     activeSwiftModule === module.id 
-                      ? 'bg-swiss-navy text-white shadow-md scale-105' 
+                      ? 'bg-brand-blue text-white shadow-md scale-105'
                       : 'bg-gray-50 text-gray-700 hover:bg-gray-100 hover:scale-105'
                   }`}
                   aria-label={`Swift ${module.name} anzeigen`}
                 >
                   <span className="text-xl mr-3" aria-hidden="true">{module.emoji}</span>
-                  <span className={`font-medium ${activeSwiftModule === module.id ? 'text-white' : 'text-swiss-navy'}`}>{module.name}</span>
+                  <span className={`font-medium ${activeSwiftModule === module.id ? 'text-white' : 'text-text-dark'}`}>{module.name}</span>
                 </button>
               ))}
             </div>
@@ -272,7 +272,7 @@ export default function ProductsSection() {
                       <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center shadow-md text-white">
                         <span className="text-2xl" aria-hidden="true">{module.emoji}</span>
                       </div>
-                      <h3 className="text-2xl font-bold text-swiss-navy ml-4">Swift{module.name}</h3>
+                      <h3 className="text-2xl font-bold text-text-dark ml-4">Swift{module.name}</h3>
                     </div>
                     <p className="text-lg text-gray-700 leading-relaxed">
                       {module.description}
@@ -308,7 +308,7 @@ export default function ProductsSection() {
                       target.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 450"><rect width="100%" height="100%" fill="%23f8fafc"/><text x="50%" y="50%" font-family="Arial" font-size="24" fill="%23475569" text-anchor="middle">Swift${module?.name} ${module?.emoji}</text></svg>`;
                     }}
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-swiss-navy/90 to-swiss-navy/0 text-white p-4">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/90 to-brand-blue/0 text-white p-4">
                     <div className="text-sm font-medium">Swift{swiftModules.find(m => m.id === activeSwiftModule)?.name}</div>
                     <div className="text-xs opacity-80">Live-Demo • Klicken Sie für Details</div>
                   </div>
@@ -324,7 +324,7 @@ export default function ProductsSection() {
                 <a
                   href="/produkte#swiftsuite"
                   onClick={() => (window as any).plausible?.('product_click', { props: { product: 'SwiftSuite' } })}
-                  className="inline-flex items-center px-6 py-3 bg-swiss-red text-white rounded-lg font-medium hover:opacity-80 transition-opacity shadow-sm"
+                  className="inline-flex items-center px-6 py-3 bg-brand-blue text-white rounded-lg font-medium hover:opacity-80 transition-opacity shadow-sm"
                   aria-label="Zur SwiftSuite navigieren"
                 >
                   <span>Zur App Suite</span>

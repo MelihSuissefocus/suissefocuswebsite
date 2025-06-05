@@ -70,7 +70,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-swiss-navy mb-4">Unsere Services</h2>
+            <h2 className="text-4xl font-bold text-text-dark mb-4">Unsere Services</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Wir verbinden IT-Know-how mit KI, um Ihnen umfassende und innovative Dienstleistungen anzubieten.
             </p>
@@ -86,10 +86,10 @@ export default function Services() {
                 className="bg-gradient-secondary p-6 rounded-xl shadow-md border border-gray-100 h-full flex flex-col"
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-swiss-navy flex items-center justify-center text-white shadow-sm">
+                  <div className="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-white shadow-sm">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-swiss-navy ml-4">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-text-dark ml-4">{service.title}</h3>
                 </div>
                 <p className="text-gray-700 mt-2 flex-grow">{service.description}</p>
               </motion.div>

@@ -79,7 +79,7 @@ const navigation = [
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
     <title>{title} | suissefocus GmbH</title>
     <meta name="description" content={description} />
@@ -153,7 +153,7 @@ const navigation = [
     </style>
   </head>
   <body class="min-h-screen bg-white font-sans">
-    <header class="bg-gray-200/90 backdrop-blur-md text-swiss-navy relative z-50 sticky top-0 transition-all duration-300" id="main-header">
+    <header class="bg-gray-200/90 backdrop-blur-md text-text-dark relative z-50 sticky top-0 transition-all duration-300" id="main-header">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex flex-col items-center justify-center">
         <div class="w-full flex items-center justify-between py-4">
           <a href="/" class="flex items-center">
@@ -170,7 +170,7 @@ const navigation = [
                     highlight={item.highlight}
                     isActive={currentPath === item.href}
                     client:load
-                    className={`px-3 py-2 text-base font-medium ${item.highlight ? 'bg-swiss-red text-white hover:bg-swiss-red/80 rounded-md' : ''}`}
+                    className={`px-3 py-2 text-base font-medium ${item.highlight ? 'bg-brand-blue text-white hover:bg-brand-blue/80 rounded-md' : ''}`}
                   >
                     {item.name}
                   </NavLink>
@@ -187,7 +187,7 @@ const navigation = [
                               className="block px-4 py-2 hover:bg-gray-50"
                             >
                               <div>
-                                <div class="font-medium text-swiss-navy">{child.name}</div>
+                                <div class="font-medium text-text-dark">{child.name}</div>
                                 {child.description && (
                                   <p class="mt-1 text-sm text-gray-500">{child.description}</p>
                                 )}
@@ -205,7 +205,7 @@ const navigation = [
 
           <div class="flex items-center">
             <button
-              class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-swiss-navy hover:text-swiss-navy/70"
+              class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-text-dark hover:text-text-dark/70"
               aria-label="Sprache wechseln"
             >
               <Globe className="h-4 w-4" />
@@ -227,7 +227,7 @@ const navigation = [
       </TransitionProvider>
     </main>
 
-    <footer class="relative z-0 bg-swiss-navy text-white py-12">
+    <footer class="relative z-0 bg-brand-blue text-white py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           <div>

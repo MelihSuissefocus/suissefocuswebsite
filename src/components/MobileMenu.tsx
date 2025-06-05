@@ -50,12 +50,12 @@ export default function MobileMenu({ navigation, currentPath }: MobileMenuProps)
           onClick={() => !item.children && setIsOpen(false)}
           className={`flex-1 ${item.children ? 'pr-8' : ''}`}
         >
-          <div className="font-medium text-swiss-navy">{item.name}</div>
+          <div className="font-medium text-text-dark">{item.name}</div>
         </NavLink>
         {item.children && (
           <button
             onClick={() => toggleExpanded(item.name)}
-            className="p-2 text-gray-400 hover:text-swiss-navy"
+            className="p-2 text-gray-400 hover:text-text-dark"
             aria-label={`${item.name} Untermenü ${expandedItems.includes(item.name) ? 'schließen' : 'öffnen'}`}
           >
             <ChevronRight 
@@ -78,7 +78,7 @@ export default function MobileMenu({ navigation, currentPath }: MobileMenuProps)
     <>
       <button 
         onClick={() => setIsOpen(true)}
-        className="md:hidden p-2 text-swiss-navy hover:text-swiss-navy/70"
+        className="md:hidden p-2 text-text-dark hover:text-text-dark/70"
         aria-label="Menü öffnen"
       >
         <Menu className="h-6 w-6" />
@@ -99,10 +99,10 @@ export default function MobileMenu({ navigation, currentPath }: MobileMenuProps)
         ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         will-change-transform
       `}>
-        <div className="flex items-center justify-between p-5 border-b border-gray-300 bg-gray-300/95 backdrop-blur-md text-swiss-navy">
+        <div className="flex items-center justify-between p-5 border-b border-gray-300 bg-gray-300/95 backdrop-blur-md text-text-dark">
           <button
             onClick={() => setCurrentLang(currentLang === 'de' ? 'en' : 'de')}
-            className="flex items-center space-x-1 text-base font-medium text-swiss-navy hover:text-swiss-navy/70"
+            className="flex items-center space-x-1 text-base font-medium text-text-dark hover:text-text-dark/70"
           >
             <Globe className="h-4 w-4" />
             <span>{currentLang.toUpperCase()}</span>
@@ -112,7 +112,7 @@ export default function MobileMenu({ navigation, currentPath }: MobileMenuProps)
               setIsOpen(false);
               setExpandedItems([]);
             }}
-            className="p-2 text-swiss-navy hover:text-swiss-navy/70"
+            className="p-2 text-text-dark hover:text-text-dark/70"
             aria-label="Menü schließen"
           >
             <X className="h-5 w-5" />
@@ -129,7 +129,7 @@ export default function MobileMenu({ navigation, currentPath }: MobileMenuProps)
             highlight
             isMobile
             onClick={() => setIsOpen(false)}
-            className="block w-full py-3 text-center bg-swiss-red text-white hover:bg-swiss-red/90 rounded-md font-medium transition-colors"
+            className="block w-full py-3 text-center bg-brand-blue text-white hover:bg-brand-blue/90 rounded-md font-medium transition-colors"
           >
             Kontakt
           </NavLink>
