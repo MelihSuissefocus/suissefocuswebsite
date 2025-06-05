@@ -4,49 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          light: '#EAF2FF',  // Sehr helles Blau
-          DEFAULT: '#2563EB', // Kräftiges Blau
-          dark: '#1D4ED8',   // Dunkleres Blau
-        },
-        secondary: {
-          light: '#F0FDF4',  // Sehr helles Mint
-          DEFAULT: '#22C55E', // Mint Grün
-          dark: '#16A34A',   // Dunkleres Mint
-        },
-        accent: {
-          light: '#F9FAFB',  // Sehr helles Grau
-          DEFAULT: '#1E293B', // Dunkles Slate
-          dark: '#0F172A',   // Fast Schwarz (Tiefes Slate)
-        },
+        'brand-blue': '#5E9BFF',
+        'brand-mint': '#2FD8A7',
+        'text-dark': '#2D2D2D',
+        'swiss-red': '#5E9BFF',
+        'swiss-navy': '#2D2D2D',
         gradient: {
-          start: '#EAF2FF',  // Sehr helles Blau
-          middle: '#BFDBFE', // Mittelblau
-          end: '#2563EB',    // Kräftiges Blau
+          start: '#C9FADB',
+          end: '#99BFFC',
         },
-        'swiss-red': '#DC2626',  // Modernes, helles Rot
-        'swiss-navy': '#1E3A8A', // Modernes, kräftiges Dunkelblau
         gray: {
           50: '#F9FAFB',
-          100: '#F3F4F6',
-          200: '#E5E7EB',
-          300: '#D1D5DB',
-          400: '#9CA3AF',
-          500: '#6B7280',
-          600: '#4B5563',
-          700: '#374151',
-          800: '#1F2937',
-          900: '#111827',
-        }
+          100: '#EFF1F5',
+          200: '#DCE0E6',
+          300: '#C4C8CF',
+          400: '#A9AFB7',
+          500: '#979CA4',
+        },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
+        display: ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'gradient-brand': 'linear-gradient(135deg, var(--tw-gradient-start) 0%, var(--tw-gradient-middle) 50%, var(--tw-gradient-end) 100%)',
-        'gradient-primary': 'linear-gradient(135deg, #2563EB 0%, #16A34A 100%)',
-        'gradient-secondary': 'linear-gradient(135deg, #EAF2FF 0%, #F0FDF4 100%)',
+        'gradient-brand': 'linear-gradient(135deg, var(--tw-gradient-start) 0%, var(--tw-gradient-end) 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #5E9BFF 0%, #2FD8A7 100%)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

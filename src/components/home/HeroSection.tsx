@@ -77,9 +77,9 @@ export default function HeroSection() {
           >
             <button
               onClick={() => (window as any).plausible('demo_click')}
-              className="px-8 py-3 bg-swiss-red text-white rounded-lg font-medium 
-                       hover:bg-swiss-red/90 transition-colors
-                       focus-visible:ring-2 focus-visible:ring-swiss-red focus-visible:ring-offset-2
+              className="px-8 py-3 bg-brand-blue text-white rounded-lg font-medium
+                       hover:bg-brand-blue/90 transition-colors
+                       focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2
                        relative overflow-hidden group"
               aria-label="Demo buchen und Produkte kennenlernen"
             >

@@ -162,7 +162,7 @@ export default function CoreValues() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-swiss-navy mb-4">Unsere Kernwerte</h2>
+            <h2 className="text-4xl font-bold text-text-dark mb-4">Unsere Kernwerte</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Bei suissefocus verbinden wir Schweizer Präzision mit KI-Innovation, um Ihr Unternehmen auf die nächste Stufe zu bringen.
             </p>
@@ -182,7 +182,7 @@ export default function CoreValues() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-swiss-navy mb-3">{value.title}</h3>
+                  <h3 className="text-2xl font-bold text-text-dark mb-3">{value.title}</h3>
                   <p className="text-gray-700 leading-relaxed">{value.description}</p>
                 </div>
               </div>
@@ -204,9 +204,9 @@ export default function CoreValues() {
             >
               <a 
                 href="/about" 
-                className="inline-block px-6 py-3 border-2 border-swiss-navy rounded-lg
-                          text-swiss-navy font-medium transition-all
-                          hover:bg-swiss-navy hover:text-white"
+                className="inline-block px-6 py-3 border-2 border-brand-blue rounded-lg
+                          text-brand-blue font-medium transition-all
+                          hover:bg-brand-blue hover:text-white"
               >
                 Mehr über uns erfahren
               </a>
